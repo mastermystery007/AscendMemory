@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.my.newproject3.LevelSelect">
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button2"
+        android:layout_alignStart="@+id/button2"
+        android:layout_marginBottom="20dp"
+        android:onClick="easyBtnClicked"
+        android:text="Easy" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:onClick="mediumBtnClicked"
+        android:text="MEDIUM" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/button2"
+        android:layout_below="@+id/button2"
+        android:onClick="hardBtnClicked"
+        android:layout_marginTop="24dp"
+        android:text="HARD" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/button3"
+        android:onClick="insaneBtnClicked"
+        android:layout_marginTop="27dp"
+        android:text="INSANE" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"
+        android:textSize="40sp"
+        android:text="Select Your Level" />
+</RelativeLayout>
